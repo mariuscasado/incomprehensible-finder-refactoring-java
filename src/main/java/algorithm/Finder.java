@@ -12,7 +12,7 @@ public class Finder {
 
 	public Optional<Pair> Find(SortBy sortBy) {
 		return pairs().reduce(sortBy::choose);
-    }
+	}
 
 	private Stream<Pair> pairs() {
 		return people.stream().flatMap(this::combineAllWith);

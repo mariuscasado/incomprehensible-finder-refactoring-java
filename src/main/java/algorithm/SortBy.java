@@ -2,7 +2,7 @@ package algorithm;
 
 public enum SortBy {
 
-	Closer {
+    Closer {
         @Override
         Pair choose(Pair pairA, Pair pairB) {
             return pairA.closestInAge(pairB);
